@@ -1,0 +1,9 @@
+PICTURE Size 300 300 Background 255 255 255 Shadow 1
+POINT Position 50 50 Color 0 0 225
+LINE Start 120 80 End 290 190 Color 0 225 0
+TRIANGLE Start 200 45 Width 20 Height 35 Color 225 102 102
+RECTANGLE Start 260 40 Width 20 Height 45 Color 76 0 153
+DIAMOND Start 100 100 Width 15 Height 20 Color 102 255 255
+STAR Start 200 260 Width 70 Color 255 128 0
+POLYGON Start 30 75 Points (35 60 45 80 20 90 30 100 25 115) Color 255 51 51
+CIRCLE Center 100 220 Radius 54 Color 0 102 0

@@ -46,6 +46,7 @@ private:
 
 public:
 	Picture(int width, int height, RGBTriple fillColor);
+	~Picture();
 	void WriteToFile(const char* FileName) const;
 	void SetPixelColor(int x, int y, RGBTriple color);
 	void AddLine(int xStart, int yStart, int xEnd, int yEnd, RGBTriple color);

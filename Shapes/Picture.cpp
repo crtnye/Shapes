@@ -1,5 +1,9 @@
 #include"Picture.h"
 
+//Picture(int width, int height, RGBTriple fillColor)
+//void SetPixelColor(int x, int y, RGBTriple color)
+//void AddLine(int xStart, int yStart, int xEnd, int yEnd, RGBTriple color)
+
 Picture::Picture(int width, int height, RGBTriple fillColor)
 {
 	InitializeFileHeader(width, height);
@@ -16,6 +20,11 @@ Picture::Picture(int width, int height, RGBTriple fillColor)
 		}
 
 	}
+}
+
+Picture::~Picture()
+{
+	delete pixels;
 }
 
 void Picture::SetPixelColor(int x, int y, RGBTriple color)

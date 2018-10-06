@@ -1,6 +1,7 @@
 #pragma once
 #include "RGBTriple.h"
 #include "Coordinate.h"
+#include "Picture.h"
 #include <string>
 
 using std::string;
@@ -9,17 +10,14 @@ class Shape
 {
 public:
 	Shape();
-	~Shape();
+	virtual ~Shape();
 
-	void initialize(string stbAttributes); 
-	void draw();
-	void drawShadow();
+	virtual void initialize(string stbAttributes) = 0; 
+	virtual void draw(Picture&) = 0;
+	virtual void drawWithShadow(Picture&) = 0;
 
-private:
+protected:
 	RGBTriple color;
 	Coordinate startCoord;
-
-
-
 };
 
